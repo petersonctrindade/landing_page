@@ -1,0 +1,119 @@
+* {
+    margin: 0; /* Altera a margem de todos os elementos */
+    padding: 0; /* Altera a margem interna de todos os elementos */
+    box-sizing: border-box; /* Altera o calculo do tamanho dos elementos */
+}
+
+body {
+    line-height: 1.6; /* Altera o tamanho da linha */
+    background-color: #f9f9f9; /* Altera a cor de fundo */
+    font-family: Arial, sans-serif; /* Altera o estilo da fonte */
+}
+
+nav {
+    position: fixed; /* Altera o posicionamento do item */
+    top: 0; /* Altera a distância do item sobre o topo do documento */
+    width: 100%; /* Altera a largura */
+    background-color: #3333338c; /* Altera a cor de fundo */
+    padding: 10px 0; /* Altera a margem interna verticais e depois as laterais */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white; /* altera a cor do texto */
+    text-decoration: none; /* altera a decoração do texto como sublinhado e negrito */
+    font-size: 18px; /* altera o tamanho da fonte */
+    padding: 10px; /* altera a margem interna de maneira igual para todos os lados */
+    transition: color 0.3s; /* define a transição de alguma propriedade */
+}
+
+nav a:hover { /* hover: quando o cursor/mouse fica em cima do elemento */
+    color: #ff6347; /* altera a cor do texto */
+}
+
+/* Seleciona todos os elementos exceto o selecionado, neste caso seleciona todas as sections exceto a section com id home */
+section:not(#home) {
+    padding: 100px 20px; /* Altera a margem interna verticais e depois as laterais */
+    text-align: center; /* altera o alinhamento do texto */
+    display: flex; /* altera o tipo de organizacao da caixa */
+    justify-content: center; /* justifica todo o conteudo da caixa */
+    align-items: center; /* ajusta os itens da caixa verticalmente */
+    height: 100vh; /* altera a altura */
+}
+
+#home {
+    background-image: url(https://fruki.com.br/static/1f9effa3f8f766221a0e26e75ece59f9/8ae69/avatar-agua-da-pedra.webp); /* define uma imagem como plano de fundo */
+    background-color: #3399d2;
+    background-size: contain; /* altera o tamanho do plano de fundo */
+    background-position: center;
+    background-repeat: no-repeat; /* altera se o plano de fundo deve se repetir caso ele seja menor que o elemento */
+    color: black; /* altera a cor do texto */
+    height: 100vh; /* altera a altura */
+    text-align: center; /* altera o alinhamento do texto */
+    display: flex; /* altera o tipo de organizacao da caixa */
+    flex-direction: column; /* altera a direção que os itens da caixa devem ser posicionados */
+    justify-content: center; /* justifica todo o conteudo da caixa */
+    align-items: center; /* ajusta os itens da caixa verticalmente */
+    font-size: 1.5em; /* altera o tamanho da fonte */
+}
+
+.content{
+    display: flex; /* altera o tipo de organizacao da caixa */
+    flex-direction: row; /* altera a direção que os itens da caixa devem ser posicionados */
+    align-items: center; /* ajusta os itens da caixa verticalmente */
+    justify-content: center; /* justifica todo o conteudo da caixa */
+}
+
+.content img {
+    width: 400px; /* altera a largura */
+    height: 300px; /* altera o tamanho */
+    object-fit: contain; /* define como uma imagem dentro da caixa deve se encaixar nela, nesse caso ela vai ser 'contida' dentro da caixa */
+    margin-right: 20px; /* altera a margem externa da direita */
+    border-radius: 8px; /* define o arredontamento das bordas */
+}
+
+.content .text {
+    max-width: 600px; /* define a largura maxima */
+    text-align: left; /* altera o alinhamento do texto */
+}
+
+.content .text h2 {
+    font-size: 2em; /* altera o tamanho da fonte */
+    margin-bottom: 20px; /* altera a margem externa inferior */
+    color: #fff; /* altera a cor do texto */
+}
+
+.content .text p {
+    font-size: 1.1em; /* altera o tamanho da fonte */
+    color: #fff; /* altera a cor do texto */
+}
+
+#produto {
+    background-color: #2173f7; /* Altera a cor de fundo */
+}
+
+#about {
+    background-color: #3399d2;
+}
+
+#contact {
+    background-color: #2173f7; /* Altera a cor de fundo */
+}
+
+.cta-button {
+    margin-top: 30px; /* altera a margem externa superior */
+    background-color: #89ff29; /* Altera a cor de fundo */
+    color: rgb(0, 0, 0); /* altera a cor do texto */
+    padding: 15px 30px; /* altera a margem interna */
+    font-size: 18px; /* altera o tamanho da fonte */
+    border: none; /* altera o estilo da borda */
+    border-radius: 15px; /* define o arredontamento da borda */
+    cursor: pointer; /* altera o cursor do mouse */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* define a sombra de uma caixa */
+    transition: background-color 1s ease, transform 1s ease; /* Textão: define a transição de um elemento ou propriedade do elemento, nesse caso está alterando respectivamente: a cor de fundo com duração de 1 segundo e a suavidade da transição, a transformação do elemento (em um plano 2d) com duração de 1 segundo e a suavidade da transição*/
+}
+
+.cta-button:hover {
+    box-shadow: 0px 1px 3px #1d1a1a;
+}
